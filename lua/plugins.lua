@@ -73,7 +73,7 @@ return {
     {
         "windwp/nvim-autopairs"
     },
-     -- Installed this plugin
+    -- Installed this plugin
     {
         "kylechui/nvim-surround",
         config = function()
@@ -82,7 +82,7 @@ return {
             })
         end
     },
-     -- Indentation Highlighting
+    -- Indentation Highlighting
     {
         "lukas-reineke/indent-blankline.nvim",
     },
@@ -91,4 +91,36 @@ return {
     {
         "HiPhish/nvim-ts-rainbow2",
     },
+    {
+        "jackMort/ChatGPT.nvim",
+        event = "VeryLazy",
+        config = function()
+            require("chatgpt").setup()
+        end,
+        dependencies = {
+            "MunifTanjim/nui.nvim",
+            "nvim-lua/plenary.nvim",
+            "nvim-telescope/telescope.nvim"
+        }
+    },
+    -- Comments
+    {
+        "numToStr/Comment.nvim",
+        config = function()
+            require("Comment").setup()
+        end
+    },
+    --Rust tools
+    {
+        "neovim/nvim-lspconfig"
+    },
+    {
+        "simrat39/rust-tools.nvim"
+    },
+    {
+        "nvim-lua/plenary.nvim"
+    },
+    {
+        "mfussenegger/nvim-dap"
+    }
 }

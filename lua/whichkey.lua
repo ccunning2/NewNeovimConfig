@@ -87,6 +87,14 @@ local mappings = {
     ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
     ["m"] = { "<cmd>Mason<cr>", "Mason" }, -- LSP Manager
     ["r"] = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Reformat Code" },
+
+    -- CHATGPT
+    c = {
+        name = "ChatGPT",
+        c = {"<cmd>:ChatGPT<cr>", "ChatGPT"},
+        a = {"<cmd>:ChatGPTActAs<cr>", "ChatGPTActAs"},
+        e = {"<cmd>:ChatGPTEditWithInstructions<cr>", "ChatGPTEditWithInstructions"}
+    },
   -- Language Support
     l = {
         name = "LSP",
